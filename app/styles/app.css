@@ -1,0 +1,24 @@
+/* Defaults */
+* {
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+
+/* FORMS */
+
+input, button {
+    padding: 1rem;
+}
