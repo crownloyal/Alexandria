@@ -10,6 +10,12 @@ body {
     --color-beige: #e29578;
     --color-black: #050505;
 
+    --border-radius-default: 2px;
+    --box-shadow-default: 4px 4px 2px 1px #222;
+    --box-shadow-hover: 2px 2px 2px 1px #222;
+    --transition-default: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.33s;
+
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -45,8 +51,17 @@ body {
     height: 100%;
 }
 
-.text-content {
-    padding: 0 1rem;
+button {
+    all: unset;
+
+    padding: 1rem;
+    border-radius: var(--border-radius-default);
+    background-color: var(--color-grey);
+    box-shadow: var(--box-shadow-default);
+    transition: var(--transition-default);
+}
+button:hover {
+    box-shadow: var(--box-shadow-hover);
 }
 
 /* Header */
@@ -114,7 +129,7 @@ nav ul li::after {
 
     opacity: 0;
     transform: translateY(1.5rem);
-    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.33s;
+    transition: var(--transition-default);
 }
 
 nav ul li:hover::after,
@@ -123,3 +138,21 @@ nav ul li.active::after {
     transform: translateY(0.5rem);
 }
 
+/* Content section */
+
+.text-content {
+    padding: 0 1rem;
+}
+
+section#call-to-action {
+    padding: 1rem;
+    background-color: var(--color-teal);
+
+    display: flex;
+    justify-content: center;
+}
+
+section#call-to-action button.hero-c2a {
+    background-color: var(--color-beige);
+    font-size: 1.2rem;
+}
