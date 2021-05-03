@@ -1,5 +1,14 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<header>
+    <h1>Antiquitäten Brause</h1>
+
+    <nav>
+        <ul>
+            <LinkTo @route='index' @tagName='li'>Start</LinkTo>
+            <li><a href="https://booklooker.de" target="_blank" rel="noopener noreferrer nofollow">Buchbibliothek</a></li>
+            <LinkTo @route='about' @tagName='li'>Über uns</LinkTo>
+        </ul>
+    </nav>
+
+</header>
 
 {{outlet}}
