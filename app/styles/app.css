@@ -5,7 +5,7 @@
 body {
     --color-teal: #006d77;
     --color-mint: #83c5be;
-    --color-grey: #edf6f9;
+    --color-grey: #f6fafc;
     --color-salmon: #ffddd2;
     --color-beige: #e29578;
     --color-black: #050505;
@@ -13,7 +13,7 @@ body {
     --border-radius-default: 2px;
     --box-shadow-default: 4px 4px 2px 1px #222;
     --box-shadow-hover: 2px 2px 2px 1px #222;
-    --transition-default: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.33s;
+    --transition-default: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.2s;
 
 
     margin: 0;
@@ -145,7 +145,7 @@ nav ul li.active::after {
 }
 
 section#call-to-action {
-    padding: 1rem;
+    padding: 2rem;
     background-color: var(--color-teal);
 
     display: flex;
